@@ -1,17 +1,12 @@
-.header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0;
-}
+
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
-  color: var(--background);
+  padding: 1.6rem;
+  color: var(--foreground);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +27,7 @@ nav {
 
 .logo p {
   color: var(--foreground);
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -41,11 +36,3 @@ nav {
   align-items: center;
 }
 
-.oh-navbar-links a {
-  color: var(--foreground);
-  text-decoration: none;
-  font-size: 1rem;
-  letter-spacing: -0.05rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}

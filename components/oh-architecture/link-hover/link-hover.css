@@ -4,8 +4,16 @@
   overflow: hidden;
   height: 1rem;              /* lock height to text */
   text-decoration: none;    /* remove underline */
-  color: var(--background);              /* link color */
-  font-weight: bold;
+}
+
+.text {
+  color: var(--foreground);
+  text-decoration: none;
+  font-size: .88rem;
+  letter-spacing: -0.032rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 600;
 }
 
 .roll .text {
@@ -31,3 +39,4 @@
 .roll:hover .text:nth-child(2) {
   transform: translateY(0%);
 }
+

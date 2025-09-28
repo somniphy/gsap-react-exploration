@@ -18,8 +18,8 @@ const OHNavbar = () => {
           <div className="comma">,</div>
           <LinkHover href="#gallery" text="Gallery" />
         </div>
-        <div className="oh-contact-button">
-          <OHButton title="Contact" />
+        <div>
+          <OHButton text="Get In Touch" />
         </div>
       </nav>
     </header>

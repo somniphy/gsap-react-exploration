@@ -1,33 +1,53 @@
+button {
+  overflow: hidden;
+  display: flex;
+  padding-inline: 32px;
+  padding-block: 16px;
+  border-radius: 64px;
+  border: 0;
+  background-color: var(--foreground);
+}
 
-
-.roll {
+.button-roll {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  height: 1em; /* match your text size */
+  height: 1rem; /* lock height to text */
+  text-decoration: none; /* remove underline */
 }
 
-.roll .text {
+.button-text {
+  color: var(--background);
+  font-family: "Geist";
+  text-decoration: none;
+  font-size: .88rem;
+  letter-spacing: -0.032rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 600;
+  
+}
+
+.button-roll .button-text {
   display: block;
   transition: transform 0.4s ease;
-  color: var(--foreground);
 }
 
-.roll .text:nth-child(1) {
-  transform: translateY(0%);   /* visible */
+.button-roll .button-text:nth-child(1) {
+  transform: translateY(0%);
 }
 
-.roll .text:nth-child(2) {
+.button-roll .button-text:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(100%); /* hidden below */
+  transform: translateY(100%);
 }
 
-.roll:hover .text:nth-child(1) {
-  transform: translateY(-100%); /* move up out */
+.button-roll:hover .button-text:nth-child(1) {
+  transform: translateY(-100%);
 }
 
-.roll:hover .text:nth-child(2) {
-  transform: translateY(0%);    /* move in */
+.button-roll:hover .button-text:nth-child(2) {
+  transform: translateY(0%);
 }

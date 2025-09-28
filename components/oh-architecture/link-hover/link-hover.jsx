@@ -1,3 +1,4 @@
+import "./link-hover.css";
 
 
 const LinkHover = ({ href, text }) => {

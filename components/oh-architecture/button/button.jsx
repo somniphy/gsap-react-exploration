@@ -1,14 +1,13 @@
-import LinkHover from "../link-hover/link-hover";
 import "./button.css";
 
-const OHButton = ({ title }) => {
+const OHButton = ({ href, text }) => {
   return (
-    <div className="button-container">
-      <button>
-        <LinkHover href="#contact" text={title} />
-      </button>
-    
-    </div>
+    <button>
+      <a href={href} className="button-roll">
+        <span className="button-text">{text}</span>
+        <span className="button-text">{text}</span>
+      </a>
+    </button>
   );
 };
 
