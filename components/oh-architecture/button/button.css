@@ -1,0 +1,33 @@
+
+
+.roll {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 1em; /* match your text size */
+}
+
+.roll .text {
+  display: block;
+  transition: transform 0.4s ease;
+  color: var(--foreground);
+}
+
+.roll .text:nth-child(1) {
+  transform: translateY(0%);   /* visible */
+}
+
+.roll .text:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%); /* hidden below */
+}
+
+.roll:hover .text:nth-child(1) {
+  transform: translateY(-100%); /* move up out */
+}
+
+.roll:hover .text:nth-child(2) {
+  transform: translateY(0%);    /* move in */
+}
